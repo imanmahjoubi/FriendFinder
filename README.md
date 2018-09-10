@@ -1,4 +1,5 @@
 # friendFinder App
+- Its a simple express, node app
 ## Instructions:
 - npm install
 - npm i body-parser
@@ -16,5 +17,5 @@
 
 
 
- ### To visit my portfolio: http://wwww.imenmahjoubi.com
+ ### To visit my portfolio: http://www.imenmahjoubi.com
 
