@@ -1,0 +1,8 @@
+#exampleModal {
+    width: 50%;
+    height : 50%;
+}
+#nameError, #urlError, #error-message {
+    color: red;
+    display: none;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <form>
+            <h2>About You</h2>
+            <div class="form-group">
+                <label for="name">Name (required)</label><span id="nameError">Name cannot be blank.</span>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="image-url">Image URL (required)</label><span id="urlError">Image cannot be blank.</span>
+                <input type="text" class="form-control" id="image-url">
+            </div>
+            <h2>Questions</h2>
+            <ol>
+                <h4><li>
+                    You find it easy to stay relaxed even when there is some pressure.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionOne" id="q1rad1" value="1">
+                        <label class="form-check-label" for="q1rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionOne" id="q1rad2" value="2">
+                        <label class="form-check-label" for="q1rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionOne" id="q1rad3" value="3" checked>
+                        <label class="form-check-label" for="q1rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionOne" id="q1rad4" value="4">
+                        <label class="form-check-label" for="q1rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionOne" id="q1rad5" value="5">
+                        <label class="form-check-label" for="q1rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    You rarely do something just out of sheer curiosity<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTwo" id="q2rad1" value="1">
+                        <label class="form-check-label" for="q2rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTwo" id="q2rad2" value="2">
+                        <label class="form-check-label" for="q2rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTwo" id="q2rad3" value="3" checked>
+                        <label class="form-check-label" for="q2rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTwo" id="q2rad4" value="4">
+                        <label class="form-check-label" for="q2rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTwo" id="q2rad5" value="5">
+                        <label class="form-check-label" for="q2rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    Being organized is more important than being adaptable.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionThree" id="q3rad1" value="1">
+                        <label class="form-check-label" for="q3rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionThree" id="q3rad2" value="2">
+                        <label class="form-check-label" for="q3rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionThree" id="q3rad3" value="3" checked>
+                        <label class="form-check-label" for="q3rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionThree" id="q3rad4" value="4">
+                        <label class="form-check-label" for="q3rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionThree" id="q3rad5" value="5">
+                        <label class="form-check-label" for="q3rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    Winning a debate matters less to you than making sure nobody gets upset.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFour" id="q4rad1" value="1">
+                        <label class="form-check-label" for="q4rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFour" id="q4rad2" value="2">
+                        <label class="form-check-label" for="q4rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFour" id="q4rad3" value="3" checked>
+                        <label class="form-check-label" for="q4rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFour" id="q4rad4" value="4">
+                        <label class="form-check-label" for="q4rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFour" id="q4rad5" value="5">
+                        <label class="form-check-label" for="q4rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    You do not mind being at the center of attention.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFive" id="q5rad1" value="1">
+                        <label class="form-check-label" for="q5rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFive" id="q5rad2" value="2">
+                        <label class="form-check-label" for="q5rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFive" id="q5rad3" value="3" checked>
+                        <label class="form-check-label" for="q5rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFive" id="q5rad4" value="4">
+                        <label class="form-check-label" for="q5rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionFive" id="q5rad5" value="5">
+                        <label class="form-check-label" for="q5rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    Your travel plans are usually well thought out.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSix" id="q6rad1" value="1">
+                        <label class="form-check-label" for="q6rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSix" id="q6rad2" value="2">
+                        <label class="form-check-label" for="q6rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSix" id="q6rad3" value="3" checked>
+                        <label class="form-check-label" for="q6rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSix" id="q6rad4" value="4">
+                        <label class="form-check-label" for="q6rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSix" id="q6rad5" value="5">
+                        <label class="form-check-label" for="q6rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    People can rarely upset you.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSeven" id="q7rad1" value="1">
+                        <label class="form-check-label" for="q7rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSeven" id="q7rad2" value="2">
+                        <label class="form-check-label" for="q7rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSeven" id="q7rad3" value="3" checked>
+                        <label class="form-check-label" for="q7rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSeven" id="q7rad4" value="4">
+                        <label class="form-check-label" for="q7rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionSeven" id="q7rad5" value="5">
+                        <label class="form-check-label" for="q7rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    An interesting book or video game is often better than a social event.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionEight" id="q8rad1" value="1">
+                        <label class="form-check-label" for="q8rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionEight" id="q8rad2" value="2">
+                        <label class="form-check-label" for="q8rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionEight" id="q8rad3" value="3" checked>
+                        <label class="form-check-label" for="q8rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionEight" id="q8rad4" value="4">
+                        <label class="form-check-label" for="q8rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionEight" id="q8rad5" value="5">
+                        <label class="form-check-label" for="q8rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    You believe it is more rewarding to be liked by others than it is to be powerful.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionNine" id="q9rad1" value="1">
+                        <label class="form-check-label" for="q9rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionNine" id="q9rad2" value="2">
+                        <label class="form-check-label" for="q9rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionNine" id="q9rad3" value="3" checked>
+                        <label class="form-check-label" for="q9rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionNine" id="q9rad4" value="4">
+                        <label class="form-check-label" for="q9rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionNine" id="q9rad5" value="5">
+                        <label class="form-check-label" for="q9rad5">Strongly Agree</label>
+                    </div>
+                </li>
+                <h4><li>
+                    You are ususally highly motivated and energetic.<br></h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTen" id="q10rad1" value="1">
+                        <label class="form-check-label" for="q10rad1">Strongly Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTen" id="q10rad2" value="2">
+                        <label class="form-check-label" for="q10rad2">Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTen" id="q10rad3" value="3" checked>
+                        <label class="form-check-label" for="q10rad3">Neither Agree Nor Disagree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTen" id="q10rad4" value="4">
+                        <label class="form-check-label" for="q10rad4">Agree</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="questionTen" id="q10rad5" value="5">
+                        <label class="form-check-label" for="q10rad5">Strongly Agree</label>
+                    </div>
+                </li>
+            </ol>
+            <button class="btn btn-primary" type="submit" id="btnSubmit">Submit</button><span class="pl-3" id="error-message">Name and Image Url are required.</span>
+        </form>
+        <p class="mt-3"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/pellegrinisr/friendFinder">Git Repo</a></p>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Match</h5>
+                </div>
+                <div class="modal-body">
+                    <!-- data -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#btnSubmit').on('click', function(event) {
+            event.preventDefault();
+            var name = $('#name').val();
+            var photoUrl = $('#image-url').val();
+            var isValid = true;
+            //error checking
+            if (!name) {
+                $('#nameError').css('display', 'inline');
+                isValid = false;
+            }
+            if (!photoUrl) {
+                $('#urlError').css('display', 'inline');
+                isValid = false;
+            } 
+            if (isValid) {
+                $('#urlError').css('display', 'none');
+                $('#nameError').css('display', 'none');
+                $("#error-message").css('display', 'none');
+                name = name.trim();
+                photoUrl = photoUrl.trim();
+                var questionArray = [
+                    $('input[name="questionOne"]:checked').val(),
+                    $('input[name="questionTwo"]:checked').val(),
+                    $('input[name="questionThree"]:checked').val(),
+                    $('input[name="questionFour"]:checked').val(),
+                    $('input[name="questionFive"]:checked').val(),
+                    $('input[name="questionSix"]:checked').val(),
+                    $('input[name="questionSeven"]:checked').val(),
+                    $('input[name="questionEight"]:checked').val(),
+                    $('input[name="questionNine"]:checked').val(),
+                    $('input[name="questionTen"]:checked').val()
+                ];
+
+                var newPerson = {
+                    name: name,
+                    photo: photoUrl,
+                    scores: questionArray
+                };
+
+                $.post('/api/friends', newPerson, function(data) {
+                    console.log(data); 
+                    var name = $('<h6>').html(data.name);
+                    var picture = $('<img>').attr('src', data.photo);
+                    console.log(picture);
+                    $('.modal-body').append(name).append(picture);
+                    $('#exampleModal').modal('show');
+                });
+            } else {
+                $('#error-message').css('display', 'inline');
+            }
+        });
+    </script>
+</body>
+</html>
