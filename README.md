@@ -12,7 +12,7 @@
 
  ## To run the app
  node server.js
- and got to you http://localhost:1000
+ and got to you http://localhost:10000
  
  or visit https://uclafriendfinder2018.herokuapp.com/ to see live demo
 
